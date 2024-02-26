@@ -1,0 +1,35 @@
+{
+  "name": "functional-i18n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://interferenc@github.com/interferenc/functional-i18n.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "Marton Farago <interferenc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interferenc/functional-i18n/issues"
+  },
+  "homepage": "https://github.com/interferenc/functional-i18n#readme",
+  "devDependencies": {
+    "@types/jest": "^29.1.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
