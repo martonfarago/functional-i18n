@@ -5,6 +5,7 @@ export interface LocaleData extends BaseLocaleData {
     hi: string;
     welcome: (name: string) => string;
     valueOfFieldIsTooShort: (fieldName: string, minLength: string) => string;
+    youHaveApples: (c: number, name: string) => string;
   };
   n: {
     integer: (n: number) => string;

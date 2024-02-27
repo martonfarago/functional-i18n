@@ -1,9 +1,14 @@
+type PluralInterpolator = (count: number, ...values: string[]) => string;
 type Interpolator = (...values: string[]) => string;
 type Formatter<T> = (v: T) => string;
 type NumberFormatters = { [key: string]: Formatter<number> };
 type DateFormatters = { [key: string]: Formatter<Date> };
 interface LocaleDataMessages {
-  [key: string]: string | Interpolator | LocaleDataMessages;
+  [key: string]:
+    | string
+    | Interpolator
+    | PluralInterpolator
+    | LocaleDataMessages;
 }
 
 export interface LocaleData {

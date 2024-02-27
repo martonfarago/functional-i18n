@@ -13,6 +13,8 @@ export const en_US: LocaleData = {
     welcome: (name) => `Welcome ${name}!`,
     valueOfFieldIsTooShort: (fieldName, minLength) =>
       `The value of "${fieldName}" must be longer than ${minLength}`,
+    youHaveApples: (count, name) =>
+      `${name}, you have ${count} ${count === 1 ? "apple" : "apples"}`,
   },
   n: {
     integer: numberFormatter({ style: "decimal" }),
